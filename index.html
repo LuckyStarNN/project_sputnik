@@ -5,11 +5,12 @@
 		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
 		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+		<link rel="stylesheet" href="css/slider.css"/>
 		<link rel="stylesheet" href="css/fonts.css">
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/slick.css">
 		<link rel="stylesheet" href="css/jquery.fancybox.min.css">
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 		<link rel="stylesheet" href="css/media.css">
 		<link rel="icon" href="img/favicon/" type="imege/svg+xm">
 		<title>Sputnik</title>
@@ -59,7 +60,7 @@
 <main class="main">
 
 		<section class="slick-slider">
-				<div class="container">
+				<!--<div class="container">
 						<div class="wrapper-slider">
 								<div class="title-wrapper">
 										<h1 class="title">Новый взгляд</h1>
@@ -73,6 +74,37 @@
 								</div>
 								<img src="../sputnik/images/slider/slide-1.jpg" alt="slide-1" height="415" width="555">
 						</div>
+				</div>-->
+
+				<div class="swiper">
+						<!-- Additional required wrapper -->
+						<div class="swiper-wrapper">
+								<div class="swiper-slide">
+										<div class="title-wrapper">
+												<h1 class="title">Новый взгляд</h1>
+												<p>на привычные вещи</p>
+												<button class="btn">Посмотреть</button>
+										</div>
+										<img src="../sputnik/images/slider/slide-1.jpg" alt="slide-1" height="415" width="555">
+								</div>
+								<div class="swiper-slide">
+										<div class="title-wrapper">
+												<h1 class="title">Желтый цвет</h1>
+												<p>всегда в моде</p>
+												<button class="btn">Посмотреть</button>
+										</div>
+										<img src="../sputnik/images/slider/slide-2.jpg" alt="slide-2" height="415" width="555">
+								</div>
+								<div class="swiper-slide">
+										<div class="title-wrapper">
+												<h1 class="title">Скидки 25%</h1>
+												<p>на летнюю коллекцию</p>
+												<button class="btn">Посмотреть</button>
+										</div>
+										<img src="../sputnik/images/slider/slide-3.jpg" alt="slide-3" height="415" width="555">
+								</div>
+						</div>
+						<div class="swiper-pagination"></div>
 				</div>
 		</section>
 
@@ -372,6 +404,8 @@
 <script src="js/accordion.js"></script>
 
 <script src="js/getInputValue.js"></script>
+
+<script src="js/slider.js"></script>
 
 </body>
 </html>

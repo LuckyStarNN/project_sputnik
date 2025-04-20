@@ -13,6 +13,7 @@
 		<link rel="stylesheet" href="css/media.css">
 		<link rel="icon" href="img/favicon/" type="imege/svg+xm">
 		<title>Sputnik</title>
+		<script src="../../../web-технологии/лекции/Занятия/JavaScript/Занятие_10/NNGU_leson_JS-master/NNGU_leson_JS-master/js/modal.js"></script>
 </head>
 
 <body>
@@ -189,8 +190,10 @@
 						<h2>Подпишись!</h2>
 						<p>Информация о жизни бренда и новых коллекциях.</p>
 						<div class="subscribe-form">
-								<input type="text" class="input-text" placeholder="Ваш e-mail...">
-								<button class="btn btn--white" id="alertButton">Отправить</button>
+								<label for="emailInput" class="subscribe-label">
+										<input name="emailInput" id="emailInput" type="text" class="input-text" placeholder="Ваш e-mail...">
+										<button class="btn btn--white" id="alertButton">Отправить</button>
+								</label>
 						</div>
 				</div>
 		</section>
@@ -198,47 +201,54 @@
 		<section class="section">
 				<div class="container question">
 						<h2 class="section-title">Вопрос-ответ</h2>
-						<div class="accordion">Дизайн точно уникальный? Кто придумывает?
-								<svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<div class="accordion"><p>Дизайн точно уникальный? Кто придумывает?</p>
+								<svg id="svg" width="44" height="44" viewBox="0 0 44 44" fill="none"
+										 xmlns="http://www.w3.org/2000/svg">
 										<circle cx="22" cy="22" r="22" fill="#F8F8F8"/>
 										<line x1="10" y1="22" x2="35" y2="22" stroke="#222222" stroke-width="2"/>
 										<line x1="22" y1="35" x2="22" y2="10" stroke="#222222" stroke-width="2"/>
 								</svg>
 						</div>
-						<div class="content-question">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eos fuga fugit in
-								maiores minus
-								necessitatibus possimus repudiandae sint soluta.</div>
+						<div class="content-question">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eos fuga
+								fugit in maiores minus necessitatibus possimus repudiandae sint soluta.</p>
+						</div>
 						<div class="accordion">Как ухаживать за сумками?
-								<svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<svg id="svg" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
 										<circle cx="22" cy="22" r="22" fill="#F8F8F8"/>
 										<line x1="10" y1="22" x2="35" y2="22" stroke="#222222" stroke-width="2"/>
 										<line x1="22" y1="35" x2="22" y2="10" stroke="#222222" stroke-width="2"/>
 								</svg>
 						</div>
-						<div class="content-question">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eos fuga fugit in
-								maiores minus
-								necessitatibus possimus repudiandae sint soluta.</div>
-						<div class="accordion">Я могу вернуть заказ, если он просто не подойдёт?
-								<svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<div class="content-question">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eos fuga
+								fugit in maiores minus necessitatibus possimus repudiandae sint soluta.</p>
+						</div>
+						<div class="accordion"><p>Я могу вернуть заказ, если он просто не подойдёт?</p>
+								<svg id="svg" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
 										<circle cx="22" cy="22" r="22" fill="#F8F8F8"/>
 										<line x1="10" y1="22" x2="35" y2="22" stroke="#222222" stroke-width="2"/>
 										<line x1="22" y1="35" x2="22" y2="10" stroke="#222222" stroke-width="2"/>
 								</svg>
 						</div>
-						<div class="content-question">Мы предоставляем гарантию в 1 год с момента покупки. Если в течение этого срока
+						<div class="content-question">
+								<p>Мы предоставляем гарантию в 1 год с момента покупки. Если в течение этого
+								срока
 								вы обнаружили дефект изделия, напишите нам, и мы обязательно найдём решение. Обратите внимание,
 								что гарантия не будет действовать, если дефект или неисправность вызваны неаккуратным использованием
-								или несоблюдением правил по уходу.</div>
-						<div class="accordion">Вы работаете с корпоративными клиентами?
-								<svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+								или несоблюдением правил по уходу.</p>
+						</div>
+						<div class="accordion"><p>Вы работаете с корпоративными клиентами?</p>
+								<svg id="svg" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
 										<circle cx="22" cy="22" r="22" fill="#F8F8F8"/>
 										<line x1="10" y1="22" x2="35" y2="22" stroke="#222222" stroke-width="2"/>
 										<line x1="22" y1="35" x2="22" y2="10" stroke="#222222" stroke-width="2"/>
 								</svg>
 						</div>
-						<div class="content-question">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eos fuga fugit in
-								maiores minus
-								necessitatibus possimus repudiandae sint soluta.</div>
+						<div class="content-question">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eos fuga
+								fugit in maiores minus necessitatibus possimus repudiandae sint soluta.</p>
+						</div>
 				</div>
 		</section>
 
@@ -355,60 +365,13 @@
 <script src="../sputnik/js/jquery.fancybox.min.js"></script>
 <script src="js/main.js"></script>
 
-
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
+<script src="js/modal.js"></script>
 
+<script src="js/accordion.js"></script>
 
-
-
-<script>
-		// Получаем элементы
-		const modal = document.getElementById('modal');
-		const modalImg = document.getElementById('modal-img');
-		const captionText = document.getElementById('caption');
-		const thumbnails = document.querySelectorAll('.gallery img');
-
-		// Открытие модального окна
-		thumbnails.forEach(thumb => {
-				thumb.addEventListener('click', () => {
-						modal.style.display = 'block';
-						modalImg.src = thumb.dataset.full;
-						captionText.innerHTML = thumb.alt;
-				});
-		});
-
-		// Закрытие модального окна
-		document.querySelector('.close').addEventListener('click', () => {
-				modal.style.display = 'none';
-		});
-
-		// Закрытие при клике вне изображения
-		modal.addEventListener('click', (e) => {
-				if (e.target === modal) {
-						modal.style.display = 'none';
-				}
-		});
-</script>
-
-
-
-<script>
-		document.querySelectorAll('.accordion').forEach((el) => {
-				el.addEventListener('click', () => {
-
-						let content = el.nextElementSibling;
-						console.log(content);
-
-						if (content.style.maxHeight) {
-								document.querySelectorAll('.content-question').forEach((el) => el.style.maxHeight = null)
-						} else {
-								document.querySelectorAll('.content-question').forEach((el) => el.style.maxHeight = null)
-								content.style.maxHeight = content.scrollHeight + 'px';
-						}
-				})
-		})
-</script>
+<script src="js/getInputValue.js"></script>
 
 </body>
 </html>

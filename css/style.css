@@ -250,7 +250,7 @@ a {
   cursor: pointer;
   transition: all 0.2s ease;
 	background-color: transparent;
-		margin-bottom: 162px;
+		/*margin-bottom: 162px;*/
 }
 
 .btn:focus {
@@ -477,6 +477,11 @@ a {
 		height: 48px;
 }
 
+.subscribe-label {
+		display: flex;
+		gap: 35px;
+}
+
 .btn--white {
   background: transparent;
   color: var(--btn-white);
@@ -531,6 +536,10 @@ a {
 		transition: 0.3s ease-in-out;
 		padding-right: 100px;
 		/*background-color: #0d95e8;*/
+}
+
+.content-question p {
+		margin-bottom: 20px;
 }
 
 .slide-question {
@@ -668,5 +677,20 @@ a {
 		font-weight: 400;
 		font-size: 12px;
 		color: var(--text-color-light);
+}
+
+.svg {
+		transform: rotate(45deg);
+		transition: transform 0.3s ease-in-out;
+}
+
+.svg circle {
+		transition: fill 0.3s ease-in-out;
+}
+
+.svg circle:hover {
+		fill: var(--border-color);
+		cursor: pointer;
+		transition: fill 0.3s ease-in-out;
 }
 

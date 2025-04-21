@@ -91,7 +91,7 @@ const generateCards = (cards) => {
                 <img src='${card.img}' alt="Кросс-боди VERA">
                 <h5 class="title-recently-bought">${card.name}</h5>
                 <span>${refactoredPrice(card.price)} ₽</span>
-                <button id="card-btn" data-id="${card.id}">BUY ${index}</button>
+                <button id="card-btn" class="btn-buy-card" data-id="${card.id}">КУПИТЬ ${index}</button>
             </div>
         `
 		})

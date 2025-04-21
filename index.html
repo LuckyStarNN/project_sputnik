@@ -14,7 +14,6 @@
 		<link rel="stylesheet" href="css/media.css">
 		<link rel="icon" href="img/favicon/" type="imege/svg+xm">
 		<title>Sputnik</title>
-		<script src="../../../web-технологии/лекции/Занятия/JavaScript/Занятие_10/NNGU_leson_JS-master/NNGU_leson_JS-master/js/modal.js"></script>
 </head>
 
 <body>
@@ -192,9 +191,9 @@
 		</section>
 
 		<section class="section">
-				<div class="container wrapper-card">
+				<div id="cards" class="container wrapper-card-buy">
 						<h2>Недавно купили</h2>
-						<div class="section-card recently-bought1">
+						<!--<div class="section-card recently-bought1">
 								<img src="../sputnik/images/products/product-1.jpg" alt="Кросс-боди VERA">
 								<h5 class="title-recently-bought">Кросс-боди VERA</h5>
 								<span>3 260 ₽</span>
@@ -213,7 +212,7 @@
 								<img src="../sputnik/images/products/product-4.jpg" alt="Поясная сумка INGE">
 								<h5 class="title-recently-bought">Поясная сумка INGE</h5>
 								<span>2 990 ₽</span>
-						</div>
+						</div>-->
 				</div>
 		</section>
 
@@ -390,25 +389,38 @@
 
 
 
+<div id="cartModal" class="cart-modal">
+		<div class="cart-modal-content">
+				<span class="cart-close">&times;</span>
+				<h2>Корзина</h2>
+				<div id="cartItems" class="cart-items">
+						<!-- Cart items will be displayed here -->
+				</div>
+				<div class="cart-actions">
+						<div class="cart-total">
+								<span>Итого: </span>
+								<span id="cartTotalPrice">0 ₽</span>
+						</div>
+						<button class="clear-cart" id="clearCart">Очистить корзину</button>
+				</div>
+		</div>
+</div>
+
 
 
 <script src="../sputnik/js/jquery-3.5.1.min.js"></script>
 <script src="../sputnik/js/slick.min.js"></script>
 <script src="../sputnik/js/jquery.fancybox.min.js"></script>
+<script src="js/mockCards.js"></script>
 <script src="js/main.js"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-<script src="js/btn-slide.js"></script>
-
 <script src="js/modal.js"></script>
-
 <script src="js/accordion.js"></script>
-
 <script src="js/getInputValue.js"></script>
-
 <script src="js/slider.js"></script>
-
+<script src="js/btn-slide.js"></script>
 
 
 </body>
